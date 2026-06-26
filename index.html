@@ -105,14 +105,11 @@ what it would take to confirm the lead signal.</p>
 </div>
 
 <div class="card lead">
-<b>TLDR:</b> Five treatments (placebo, caffeine, TFA, and two AMENv1 formulations) were each
-delivered to whole cages of five mice; individual sleep was tracked by video over the post-dose night. Because
-mice in a cage are not independent, per-mouse statistics would be invalid — so we used a <b>linear
+<b>TLDR:</b> Because mice in a cage are not independent, per-mouse statistics would be invalid (essentially psuedoreplication) and produce overconfident p-values. 
+  Grouping by cages results in a very underpowered study and doesn't utilize all the information available. Instead, we can use a <b>linear
 mixed-effects model with cage as a random effect</b>, comparing each treatment to placebo with
-<b>Dunnett's correction</b> and <b>Kenward–Roger small-sample degrees of freedom</b>. The non-buffered AMEN
-arm is the clear lead (~9–13 percentage points less sleep, building over the night), but at 19 cages
-<b>no contrast is statistically significant</b>: the effect is real in direction and size, just underpowered.
-A power analysis shows ~15 cages/group would be needed to confirm it.</div>
+<b>Dunnett's correction</b> and <b>Kenward–Roger small-sample degrees of freedom</b>. Using AMEN as an example study, we can also perform a power analysis
+which shows ~15 cages/group would be needed to show significance.</div>
 
 <h2 id=s1>1 · The study &amp; the scientific question</h2>
 <p>This is a <b>wake-promotion screen</b>. AMENv1 (a peptide, tested both buffered and non-buffered) is the
